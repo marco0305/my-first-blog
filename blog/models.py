@@ -5,6 +5,7 @@ from django.db import models
 from django.utils import timezone
 
 #my first blog models.
+#the first blog.
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length = 200)
